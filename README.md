@@ -1,4 +1,4 @@
-  <img src="https://github.com/MertSolgun/Horoscope/assets/115940928/700b2a61-a7fd-4d9c-8538-7cb06990b515" width="40%">
+  <img src="https://github.com/MertSolgun/Horoscope/assets/115940928/700b2a61-a7fd-4d9c-8538-7cb06990b515" width="20%" align="center">
 <h1>Horoscope
   <a href="https://horoscope-kappa.vercel.app/">Live</a>
 </h1>
