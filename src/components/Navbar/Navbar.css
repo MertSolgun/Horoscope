@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap");
+nav {
+  background-color: #cd890d;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: Rubik Distressed;
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #171b20;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+@media (min-width: 700px) {
+  .mobilMenu {
+    display: none;
+  }
+  #bars {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  #bars {
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+    top: 3rem;
+  }
+  .desktopMenu {
+    display: none;
+  }
+  .mobilMenu {
+    background-color: #cd890d;
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3 !important;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    display: none;
+  }
+  .mobilMenu.open {
+    display: flex;
+    -webkit-animation: myAnim2 2s ease 0s 1 normal forwards;
+            animation: myAnim2 2s ease 0s 1 normal forwards;
+  }
+}
+@-webkit-keyframes myAnim2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes myAnim2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#bars {
+  cursor: pointer;
+}/*# sourceMappingURL=Navbar.css.map */
